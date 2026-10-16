@@ -1,0 +1,31 @@
+{
+  "name": "markdown-preview-theme-toggle",
+  "displayName": "Markdown Preview Theme Toggle",
+  "description": "Choose Markdown Preview Github Styling themes from the status bar hover while previewing Markdown.",
+  "version": "0.9.0",
+  "publisher": "local",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yode0419/markdown-preview-theme-toggle.git"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "extensionDependencies": [
+    "bierner.markdown-preview-github-styles"
+  ],
+  "scripts": {
+    "package": "vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^4.0.0"
+  }
+}
